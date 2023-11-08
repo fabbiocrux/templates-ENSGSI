@@ -1,0 +1,91 @@
+---
+title: "Title of the Presentation"
+subtitle: "<img src='figures/ENSGSI.png' width='500'>"  
+email: "cruzsanc1@univ-lorraine.fr"
+institute: "Université de Lorraine"
+author: 
+  - "MdC. Fabio A. CRUZ SANCHEZ"
+date: '`r Sys.Date()`'
+format: 
+  revealjs:
+    slide-number: c/t
+    controls: true
+    transition: none
+    width: 1600
+    height: 900
+    theme: [default, assets/theme/slides.scss]
+    echo: true
+    #toc: true
+    #toc-title: Agenda for today
+    #toc-depth: 1
+    center: false
+    number-sections: true
+    fig-align: center    
+    logo: "figures/ENSGSI.png"
+    header-logo: "figures/UL.png"
+    header: '[Presentation](#/TOC)'
+    #subtitle-as-header: true
+    sc-sb-title: false
+    footer: 'Test'
+    chalkboard: true
+filters:
+  - reveal-header
+  - reveal-auto-agenda
+#slide-level: 3
+auto-agenda:
+  bullets: numbered
+  heading: Agenda for the meeting 
+---
+
+```{r setup, include=FALSE}
+# Load packages -----
+library(tidyverse)
+library(here)
+library(countdown)
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE,
+  fig.align='center',
+  out.width = '75%' 
+)
+
+# Link for the Figures
+URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
+
+```
+
+
+# Section 1 
+
+
+## Rhi is {background-color="aquamarine"}
+
+## This is a subtitle {.BG-GSI-1} 
+
+This is a test
+
+
+This
+
+is 
+
+
+# Section 2
+
+## This is a subtitle 2 {.BG-GSI-2} 
+
+background 2
+
+
+
+# Section 3
+
+## Title
+
+test

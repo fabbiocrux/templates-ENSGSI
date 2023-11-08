@@ -1,0 +1,62 @@
+---
+title: "Title of the Presentation"
+subtitle: "Subtitle of the Presentation"  
+email: "cruzsanc1@univ-lorraine.fr"
+author: 
+  - "MdC. Fabio A. CRUZ SANCHEZ"
+date: '`r Sys.Date()`'
+format: 
+  revealjs:
+    slide-number: c/t
+    controls: true
+    transition: none
+    width: 1600
+    height: 900
+    css: ["assets/theme/slides.scss"]
+    theme: simple
+    echo: true
+    toc: true
+    toc-title: Agenda for today
+    toc-depth: 1
+    center: false
+    number-sections: true
+    fig-align: center
+    theme: [default, theme/custom.scss]
+    logo: "figures/ENSGSI.png"
+    header-logo: "figures/ENSGSI.png"
+    header: '[Think Innovation Week 2023](#/TOC)'
+    #subtitle-as-header: true
+    sc-sb-title: false
+    footer: 'Test'
+    chalkboard: true
+filters:
+  - reveal-header
+---
+
+```{r setup, include=FALSE}
+# Load packages -----
+library(tidyverse)
+library(here)
+library(countdown)
+
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE,
+  fig.align='center',
+  out.width = '75%' 
+)
+
+# Link for the Figures
+URL = c('https://raw.githubusercontent.com/fabbiocrux/Figures/main/')
+
+```
+
+
+## Title
+
+test
